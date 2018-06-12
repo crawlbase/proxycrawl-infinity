@@ -1,0 +1,55 @@
+{
+  "name": "ProxyCrawl Stats",
+  "description": "Displays the current requests consumption for normal and javascript tokens",
+  "author": "ProxyCrawl",
+  "website": "https://proxycrawl.com",
+  "category": "Developer Tools",
+  "private": true,
+  "bundleID": "com.proxycrawl.stats",
+  "version": "1.0.0",
+  "refreshInterval": 3600,
+  "minimumRefreshInterval": 60,
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/proxycrawl/proxycrawl-infinity.git"
+  },
+  "user_options": [
+    {
+      "title": "ProxyCrawl normal token",
+      "name": "normalToken",
+      "type": "string",
+      "tooltip": "Your ProcyCrawl normal token",
+      "default": "",
+      "required": true,
+      "options": {
+        "secure": true
+      }
+    },
+    {
+      "title": "ProxyCrawl javascript token",
+      "name": "javascriptToken",
+      "type": "string",
+      "tooltip": "Your ProcyCrawl javascript token",
+      "default": "",
+      "required": true,
+      "options": {
+        "secure": true
+      }
+    },
+    {
+      "title": "Show",
+      "name": "display",
+      "type": "string",
+      "options": [
+        { "title": "Monthly Total Requests Count", "name": "total_count" },
+        { "title": "Monthly Normal Requests Count", "name": "normal_count" },
+        { "title": "Monthly Javascript Requests Count", "name": "javascript_count" },
+        { "title": "Monthly USD Spent", "name": "total_price" },
+        { "title": "Monthly Javascript USD Spent", "name": "normal_price" },
+        { "title": "Monthly Javascript USD Spent", "name": "javascript_price" }
+      ],
+      "default": "total_count",
+      "required": true
+    }
+  ]
+}
