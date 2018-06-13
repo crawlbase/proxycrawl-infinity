@@ -15,10 +15,10 @@
   },
   "user_options": [
     {
-      "title": "ProxyCrawl normal token",
+      "title": "Normal token",
       "name": "normalToken",
       "type": "string",
-      "tooltip": "Your ProcyCrawl normal token",
+      "tooltip": "Your ProxyCrawl normal token",
       "default": "",
       "required": true,
       "options": {
@@ -26,10 +26,10 @@
       }
     },
     {
-      "title": "ProxyCrawl javascript token",
+      "title": "Javascript token",
       "name": "javascriptToken",
       "type": "string",
-      "tooltip": "Your ProcyCrawl javascript token",
+      "tooltip": "Your ProxyCrawl javascript token",
       "default": "",
       "required": true,
       "options": {
