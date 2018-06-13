@@ -45,7 +45,7 @@
         { "title": "Monthly Normal Requests Count", "name": "normal_count" },
         { "title": "Monthly Javascript Requests Count", "name": "javascript_count" },
         { "title": "Monthly USD Spent", "name": "total_price" },
-        { "title": "Monthly Javascript USD Spent", "name": "normal_price" },
+        { "title": "Monthly Normal USD Spent", "name": "normal_price" },
         { "title": "Monthly Javascript USD Spent", "name": "javascript_price" }
       ],
       "default": "total_count",
