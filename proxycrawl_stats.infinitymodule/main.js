@@ -14,12 +14,13 @@ const parseJSONResponse = (json) => {
     const stats = json.stats;
     let value;
     if (userArguments.display === 'total_count') {
-      value = stats.normal_count + stats.javascript_count;
+      value = stats.normal_count * 1 + stats.javascript_count * 1;
     } else if (userArguments.display === 'total_price') {
       value = stats.normal_price * 1 + stats.javascript_price * 1;
     } else {
       value = stats[userArguments.display];
     }
+    value = Math.round(value * 100) / 100;
     if (userArguments.display.indexOf('_price') > -1) {
       value = '$' + value;
     }
